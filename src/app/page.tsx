@@ -9,7 +9,6 @@ export default function Home() {
   const toogleHandler = () => setIsNeedShow(!isNeedShow);
   const cancelSubscribe = () => setIsCanceled(!isCanceled);
 
-  console.log(isNeedShow);
   return (
     <>
       <div>Welcomo to Jurassic Park</div>
@@ -26,20 +25,6 @@ export default function Home() {
         </Button.Content>
         {isCanceled && <Button.Errors errors="Your subscribe is canceled" />}
       </Button.Root>
-      {/* <Button
-        text="Testing span message"
-        errorMsg="span message in action"
-        title="Testando Parttern de compositon"
-        textSecundary="Testing Cancel button"
-        errorMsgSecudary="Cancel has been confirmed"
-      ></Button>
-      <Button
-        text="Testing span message"
-        errorMsg="span message in action"
-        title="Testando Parttern de compositon"
-        textSecundary="Testing Cancel button"
-        errorMsgSecudary="Cancel has been confirmed"
-      ></Button> */}
     </>
   );
 }
